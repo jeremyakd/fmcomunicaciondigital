@@ -1,12 +1,12 @@
 from django.contrib import admin
-from django.urls import path
-from core import views
+from django.urls import path, include
 from django.conf import settings
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.home, name='home'),
+    path('', include('core.urls')),
+    path('blog/', include('blog.urls')),
 ]
 
 if settings.DEBUG:
