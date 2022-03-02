@@ -16,7 +16,7 @@ ABM Proyect Django refactor code
 * ###  Install dependences
 
 
-      pip install -r requierements.txt
+      pip install -r requirements.txt
 
 * ### Run
 
