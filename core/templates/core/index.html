@@ -1,128 +1,44 @@
-<!doctype html>
-<html lang="es">
-<!-- Mirrored from templates.iqonic.design/markethon/layout-1/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 27 Aug 2021 19:56:04 GMT -->
-<head>
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="description" content="FM Comunicación - Agencia de Marketing Digital y Community Management"/>
-	<title>FM Comunicación Digital</title>
-	{% load static %}
-	<!-- Favicon -->
-	<link rel="shortcut icon" href="{% static 'core/images/favicon.png' %}">
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="{% static 'core/css/bootstrap.min.css' %}">
-	<!-- Settings CSS -->
-	<link rel="stylesheet" href="{% static 'core/revslider/css/settings.css' %}">
-	<!-- Typography CSS -->
-	<link rel="stylesheet" href="{% static 'core/css/typography.css' %}">
-	<!-- Style CSS -->
-	<link rel="stylesheet" href="{% static 'core/css/style.css' %}">
-	<!-- Responsive CSS -->
-	<link rel="stylesheet" href="{% static 'core/css/responsive.css' %}">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<!-- <link rel="stylesheet" href="{% static 'core/splide/dist/css/splide.min.css' %}"></link> -->
-	<meta name="p:domain_verify" content="1c3adb38dff75ae23a168f39ccc7b0c8"/>
-	
-	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
-</head>
-<body>
-	<!-- loading -->
-	<div id="loading">
-		<div id="loading-center">
-			<img src="{% static 'core/images/logo_fm.png' %}" alt="loder">
+{% extends "core/base.html" %}
+{% load static %}
+
+{% block content %}
+<div id="carouselExampleIndicators" class="carousel slide carousel-item-desktop" data-ride="carousel">
+	<ol class="carousel-indicators">
+		<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+		<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+	</ol>
+	<div class="carousel-inner ">
+		<div class="carousel-item active ">
+		<img class="d-block w-100" src="{% static 'core/images/slider.jpg' %}" alt="First slide">
+		<div class="carousel-content">
+			<p class="title">Trabajá en tu estrategia digital</p>
+			<p class="description">¡Escribinos y comenzá hoy!</p>
+			<a href="#contacto"><button class="tp-caption rev-btn button button-sm rev-withicon  tp-resizeme rs-hover-ready">Contactar</button></a>
 		</div>
-	</div>
-	<!-- loading End -->
-	<!-- Header -->
-	<header id="main-header" class="header-one">
-		<!-- menu start -->
-		<nav id="menu-1" class="mega-menu" data-color="">
-			<!-- menu list items container -->
-			<div class="menu-list-items">
-				<div class="container-fluid">
-					<div class="row">
-						<div class="col-sm-12">
-							<!-- menu logo -->
-							<ul class="menu-logo">
-								<li>
-									<a href="{% url 'home' %}"><img src="{% static 'core/images/logo_fm.png' %}" alt="logo fm" class="img-fluid"></a>
-								</li>
-							</ul>
-							<!-- menu search bar -->
-							<ul class="menu-search-bar">
-								<li class="menu-contact iq-fw-5"><a href="tel:+5491136434315"><i class="fas fa-phone pr-1 "></i> +54 9
-									1136434315</a></li>
-							</ul>
-							<a href="https://wa.me/+5491136434315?text=Me%20gustaría%20cotizar%20un%20trabajo" class="whatsapp"
-							target="_blank">
-								<img src="{% static 'core/images/Whatsapp-Logo.png' %}" alt="Botón WhatsApp"/>
-							</a>
-							
-							
-							<!-- menu links -->
-							<ul class="menu-links">
-								<!-- active class -->
-								<li>
-									<a href="{% url 'home' %}" class="active">Inicio</a>
-								</li>
-								<li>
-									<a href="#nosotros">Nosotros</a>
-								</li>
-								<li>
-									<a href="#servicios">Servicios</a>
-								</li>
-								<li>
-									<a href="blog.html">Blog</a>
-								</li>
-								<li>
-								<li><a href="#contacto">Contacto</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</nav>
-		<!-- menu end -->
-	</header>
-	<!-- Header END -->
-	<div id="carouselExampleIndicators" class="carousel slide carousel-item-desktop" data-ride="carousel">
-		<ol class="carousel-indicators">
-			<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-			<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-		</ol>
-		<div class="carousel-inner ">
-			<div class="carousel-item active ">
-			<img class="d-block w-100" src="{% static 'core/images/slider.jpg' %}" alt="First slide">
+		</div>
+		<div class="carousel-item">
+		<img class="d-block w-100" src="{% static 'core/images/slider2.jpg' %}" alt="Second slide">
 			<div class="carousel-content">
-				<p class="title">Trabajá en tu estrategia digital</p>
-				<p class="description">¡Escribinos y comenzá hoy!</p>
-				<button class="tp-caption rev-btn button button-sm rev-withicon  tp-resizeme rs-hover-ready">Contactar</button>
+			<p class="title">Acercate cada vez más a tus objetivos</p>
+			<p class="description">Pedí tu presupuesto personalizado</p>
+			<a href="#contacto"><button class="tp-caption rev-btn button button-sm rev-withicon  tp-resizeme rs-hover-ready">Solicitar Presupuesto</button></a>
 			</div>
-			</div>
-			<div class="carousel-item">
-			<img class="d-block w-100" src="{% static 'core/images/slider2.jpg' %}" alt="Second slide">
-				<div class="carousel-content">
-				<p class="title">Acercate cada vez más a tus objetivos</p>
-				<p class="description">Pedí tu presupuesto personalizado</p>
-				<button class="tp-caption rev-btn button button-sm rev-withicon  tp-resizeme rs-hover-ready">Solicitar Presupuesto</button>
-				</div>
-			</div>
-
-
 		</div>
-		<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			<span class="sr-only">Previous</span>
-		</a>
-		<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-			<span class="carousel-control-next-icon" aria-hidden="true"></span>
-			<span class="sr-only">Next</span>
-		</a>
-	</div>
 
-	<!-- carrousel mobile 
-	<div id="carouselExampleIndicators" class="carousel slide carousel-item-mobile" data-ride="carousel">
+
+	</div>
+	<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+		<span class="carousel-control-prev-icon" style="color : black;" aria-hidden="true"></span>
+		<span class="sr-only">Previous</span>
+	</a>
+	<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+		<span class="sr-only">Next</span>
+	</a>
+</div>
+
+<!-- carrousel mobile 
+<div id="carouselExampleIndicators" class="carousel slide carousel-item-mobile" data-ride="carousel">
 	<ol class="carousel-indicators">
 		<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
 		<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -171,525 +87,325 @@
 		<span class="carousel-control-next-icon" aria-hidden="true"></span>
 		<span class="sr-only">Next</span>
 	</a>
-	</div>
-	-->
+</div>
+-->
 
-	<!-- Main Content -->
-	<div class="main-content">
-		<!-- Works -->
-		<section class="iq-works main-bg position-relative">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-12 text-center">
-						<div class="section-title">
-							<p class="mt-2 text-uppercase text-white iq-fw-3 iq-ls-3">la receta secreta</p>
-							<h2 class="title text-white  iq-fw-8">¿Cómo trabajamos junto a ustedes?</h2>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-4 text-center">
-						<div class="iq-workinfo">
-							<div class="service-shap  mb-4 iq-rmt-40">
-								<img src="{% static 'core/images/work/01.png' %}" class="img-fluid " alt="Planicifación">
-							</div>
-							<h3 class="title text-white">1. Planificación</h3>
-							<span class="mb-0 text-uppercase text-white iq-fw-3 iq-ls-1">Nuestro equipo de profesionales trabaja en conjunto para elaborar una estrategia acorde a sus objetivos.</span>
-						</div>
-					</div>
-					<div class="col-lg-4 text-center">
-						<div class="iq-workinfo">
-							<div class="service-shap  mb-4 iq-rmt-40">
-								<img src="{% static 'core/images/work/02.png' %}" class="img-fluid " alt="Creación">
-							</div>
-							<h3 class="title text-white">2. Creación y diseño</h3>
-							<span class="mb-0 text-uppercase text-white iq-fw-3 iq-ls-1">Creamos contenido buscando cumplir con las últimas tendencias y atrapando a los usuarios.</span>
-						</div>
-					</div>
-					<div class="col-lg-4 text-center">
-						<div class="iq-workinfo">
-							<div class="service-shap  mb-4 iq-rmt-40">
-								<img src="{% static 'core/images/work/03.png' %}" class="img-fluid " alt="Optmización">
-							</div>
-							<h3 class="title text-white">3. Optimización</h3>
-							<span class="mb-0 text-uppercase text-white iq-fw-3 iq-ls-1">Trabajamos constantemente con las estadísticas de cada red social para poder optimizar al máximo nuestro potencial y alcance.</span>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="iq-way">
-				<img src="{% static 'core/images/work/2.png' %}" class="img-fluid" alt="image">
-			</div>
-		</section>
-		<!-- Project  -->
-		<section class="iq-project position-relative">
-			<div class="scrollme">
-				<img src="{% static 'core/images/others/13.png' %}" class="img-fluid project-overlay-left animateme"
-					data-when="enter"
-					data-from="0.5"
-					data-to="0"
-					data-translatey="100" alt="image">
-			</div>
-			<div class="container">
-				<div class="row mb-3 align-items-center">
-					<div class="col-lg-6 ">
-						<!--                     <h2  class="display-2  iq-fw-9 d-inline-block title"><span class="counter">100</span> <sup class=" d-inline-block">+</sup></h2>-->
-						<h3 class="d-inline-block  iq-fw-8">Marcas que confiaron en nosotros</h3>
-					</div>
-					<!--                  <div class="col-lg-6 ">-->
-					<!--                     <a class="slide-button button float-right explore-btn" href="portfolio.html">-->
-					<!--                  <div class="first">Ver más</div>-->
-					<!--                  <div class="second">Ver más</div>-->
-					<!--               </a>-->
-					<!--               </div>-->
-				</div>
-			</div>
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-sm-12">
-						<div id="portfolio-carousel" class="owl-carousel" data-autoplay="true" data-loop="true" data-nav="true"
-							data-dots="false" data-items="4" data-items-laptop="3" data-items-tab="3" data-items-mobile="1"
-							data-items-mobile-sm="1" data-margin="30">
-							<div class="item">
-								<div class="iq-portfolio">
-									<img src="{% static 'core/images/clients/Klma.png' %}" class="img-fluid" alt="KLMA">
-									<div class="portfolio-info">
-										<a href="#"><span class="text-black">@klma.slowfashion</span></a>
-										<a href="#" class="text-uppercase text-gray float-right">CM + Diseño de contenido
-										</a>
-									</div>
-								</div>
-							</div>
-							<div class="item">
-								<div class="iq-portfolio">
-									<img src="{% static 'core/images/clients/Benfresh.png' %}" class="img-fluid" alt="Benfresh Food">
-									<div class="portfolio-info">
-										<a href="#"><span class="text-black">@benfreshfood</span></a>
-										<a href="#" class="text-uppercase text-gray float-right">CM + Diseño + Publicidad Digital</a>
-									</div>
-								</div>
-							</div>
-							<div class="item">
-								<div class="iq-portfolio">
-									<img src="{% static 'core/images/clients/Etre.png' %}" class="img-fluid" alt="mariapuyalcueros">
-									<div class="portfolio-info">
-										<a href="#"><span class="text-black">@mariapuyalcueros</span></a>
-										<a href="#" class="text-uppercase text-gray float-right">CM + Publicidad Digital</a>
-									</div>
-								</div>
-							</div>
-							<div class="item">
-								<div class="iq-portfolio">
-									<img src="{% static 'core/images/clients/Noray.png' %}" class="img-fluid" alt="noraymuebles">
-									<div class="portfolio-info">
-										<a href="#"><span class="text-black">@noraymuebles</span></a>
-										<a href="#" class="text-uppercase text-gray float-right">CM + Diseño + Publicidad Digital</a>
-									</div>
-								</div>
-							</div>
-							<div class="item">
-								<div class="iq-portfolio">
-									<img src="{% static 'core/images/clients/Roller_si.png' %}" class="img-fluid" alt="@roller.si">
-									<div class="portfolio-info">
-										<a href="#"><span class="text-black">@roller.si</span></a>
-										<a href="#" class="text-uppercase text-gray float-right">CM + Diseño + Publicidad Digital</a>
-									</div>
-								</div>
-							</div>
-							<div class="item">
-								<div class="iq-portfolio">
-									<img src="{% static 'core/images/clients/Lapuntita.png' %}" class="img-fluid" alt="lapuntita_baires">
-									<div class="portfolio-info">
-										<a href="#"><span class="text-black">@lapuntita_baires</span></a>
-										<a href="#" class="text-uppercase text-gray float-right"> Community management
-										</a>
-									</div>
-								</div>
-							</div>
-							<div class="item">
-								<div class="iq-portfolio">
-									<img src="{% static 'core/images/clients/Norves.png' %}" class="img-fluid" alt="@norvesjewels">
-									<div class="portfolio-info">
-										<a href="#"><span class="text-black">@norvesjewels</span></a>
-										<a href="#" class="text-uppercase text-gray float-right">CM + Diseño de contenido</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- Project END -->
-		<!-- Choose From  -->
-		<section class="iq-choose-info position-relative" id="nosotros">
-			<div class="container">
-				<div class="row flex-row-reverse align-items-center h-100">
-					<div class="col-lg-6 align-self-center wow fadeInRight">
-						<h2 class="iq-fw-8 mb-2">Nosotros</h2>
-						<p>Somos un equipo de profesionales listos para enfrentar cualquier desafío. Nos apasiona nuestro trabajo e
-							intentamos sentir cada marca como propia, aportándole un valor extra al mismo desde nuestra experiencia y
-							conocimiento. <strong>¿Cuál es la clave?</strong> Abordar cada proyecto en equipo, otorgandole gran
-							importancia al aporte de cada uno para conseguir un resultado final óptimo. </p>
-					</div>
-					<div class="col-lg-6 iq-rmt-40">
-						<img src="{% static 'core/images/others/about.jpg' %}" class="img-fluid wow fadeInLeft" alt="image">
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- Choose From END -->
-		<!-- Tab -->
-		<section class="iq-tab services-tab" id="iq-tab">
-			<div class="container" id="servicios">
-				<div class="row">
-					<div class="col-sm-12 text-center">
-						<div class="section-title">
-							<p class="iq-rmt-40 text-uppercase  iq-fw-3 iq-ls-3 mb-1">Nuestros Servicios</p>
-							<h2 class="title iq-fw-8">¿Qué les ofrecemos?</h2>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12">
-						<!-- Nav tabs -->
-						<ul class="nav nav-pills tabs-left justify-content-center" id="pills-tab2" role="tablist">
-							
-							<li class="nav-item">
-								<a class="nav-link" id="automation1-tab" data-toggle="pill" href="#automation1" role="tab"
-								aria-controls="automation1" aria-selected="false"><img width="100" height="auto"
-																						src="{% static 'core/images/icons/Community.png' %}"><span
-										class="mt-2 mb-2">Community Manager</span></a>
-							</li>
-							
-							<li class="nav-item">
-								<a class="nav-link" id="social1-tab" data-toggle="pill" href="#social1" role="tab" aria-controls="social1"
-								aria-selected="false"><img width="100" height="auto" src="{% static 'core/images/icons/DisenoGrafico.png' %}"><span
-										class="mt-2 mb-2">Diseño <br>Gráfico</span></a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link active" id="cloud1-tab" data-toggle="pill" href="#cloud1" role="tab"
-								aria-controls="cloud1" aria-selected="true"><img width="100" height="auto"
-																					src="{% static 'core/images/icons/digital.png' %}"><span
-										class="mt-2 mb-2">Publicidad Digital</span></a>
-							</li>
-							
-							<li class="nav-item">
-								<a class="nav-link" id="bussiness1-tab" data-toggle="pill" href="#bussiness1" role="tab"
-								aria-controls="bussiness1" aria-selected="false"><img width="100" height="auto"
-																						src="{% static 'core/images/icons/DisenoWeb.png' %}"><span
-										class="mt-2 mb-2">Diseño <br>Web</span></a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" id="bussiness2-tab" data-toggle="pill" href="#bussiness2" role="tab"
-								aria-controls="bussiness2" aria-selected="false"><img width="100" height="auto"
-																						src="{% static 'core/images/icons/Asesoria.png' %}"><span
-										class="mt-2 mb-2"> SEO</span><br></a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" id="emailmarketing1-tab" data-toggle="pill" href="#emailmarketing1" role="tab"
-								aria-controls="emailmarketing1" aria-selected="false"><img width="100" height="auto"
-																							src="{% static 'core/images/icons/Planificacion.png' %}"><span
-										class="mt-2 mb-2">Creación de Contenido</span></a>
-							</li>
-						</ul>
-						<!-- Tab panes -->
-						<div class="tab-content">
-							<div class="tab-pane active" id="cloud1">
-								<div class="row">
-									<div class="col-lg-6 col-md-12 text-left">
-										<h2 class="title iq-fw-8">Publicidad Digital</h2>
-										<p class="mt-3">Creamos campañas publicitarias en Facebook, Instagram y Google, que realizadas con la
-											segmentación adecuada y una elección efectiva de objetivos, buscan conseguir las metas pautadas con
-											el cliente en un corto plazo.
-										
-										</p>
-									</div>
-									<div class="col-lg-6 col-md-12 ">
-										<img src="{% static 'core/images/breadcrumb/Servicios_Publicidad.png' %}" class="img-fluid" alt="Publicidad Digital">
-									</div>
-								</div>
-							</div>
-							<div class="tab-pane" id="emailmarketing1">
-								<div class="row">
-									<div class="col-lg-6 col-md-12 text-left">
-										<h2 class="title iq-fw-8">Creación de Contenido</h2>
-										<p class="mt-3">Creación de contenido para tus redes sociales de
-											la mano de expertos y con la asistencia de Community Managers con el fin de mantener una
-											misma estética acorde a tu marca y así lograr una
-											armonía visual en tus publicaciones. En la actualidad, tener contenido que capte la atención de los
-											usuarios es fundamental. ¡Te ofrecemos Fotografía profesional en estudio y exteriores, foto producto
-											o en contexto, contenido para Reels, y más!
-										</p>
-									</div>
-									<div class="col-lg-6 col-md-12 ">
-										<img src="{% static 'core/images/breadcrumb/Servicios_CreacionContenido.png' %}" class="img-fluid"
-											alt="Creación de contenido">
-									</div>
-								</div>
-							</div>
-							<div class="tab-pane" id="social1">
-								<div class="row">
-									<div class="col-lg-6 col-md-12 text-left">
-										<h2 class="title iq-fw-8">Diseño Gráfico</h2>
-										<p class="mt-3">Te acompañamos con el armado de tu marca, su logo, la elección de tipografías y paletas de colores. Perfecto para quienes recién estan comenzando o para quienes buscan renovar su marca. Además, nuestros diseñadores trabajan a la par de nuestros community managers diseñando tus publicaciones para mantener la misma identidad visual en el feed de Instagram y de esta forma lograr mejores resultados.
-										</p>
-									</div>
-									<div class="col-lg-6 col-md-12 ">
-										<img src="{% static 'core/images/breadcrumb/Servicios_DisenoGrafico.png' %}" class="img-fluid" alt="image">
-									</div>
-								</div>
-							</div>
-							<div class="tab-pane" id="automation1">
-								<div class="row">
-									<div class="col-lg-6 col-md-12 text-left">
-										<h2 class="title iq-fw-8">Community Manager</h2>
-										<p class="mt-3">Construimos, gestionamos y administramos tus
-											redes sociales, creando relaciones estables con tus
-											seguidores. Buscaremos, con el armado de un plan
-											de comunicación, potenciar tus ventas y expandir
-											tu público, mostrando contenido de calidad y generando interacción constante con los usuarios
-										</p>
-									</div>
-									<div class="col-lg-6 col-md-12 ">
-										<img src="{% static 'core/images/breadcrumb/Servicios_CM.png' %}" class="img-fluid" alt="image">
-									</div>
-								</div>
-							</div>
-							<div class="tab-pane" id="bussiness1">
-								<div class="row">
-									<div class="col-lg-6 col-md-12 text-left">
-										<h2 class="title iq-fw-8">Diseño Web</h2>
-										<p class="mt-3">Creamos tu landing para que puedas mostrar tus servicios desde un sitio web y de esta manera darte a conocer fuera de las redes sociales, con un perfil más profesional y tu propio estilo.</p>
-									</div>
-									<div class="col-lg-6 col-md-12 ">
-										<img src="{% static 'core/images/breadcrumb/Servicios_DisenoWeb.png' %}" class="img-fluid" alt="Diseño Web">
-									</div>
-								</div>
-							</div>
-							<div class="tab-pane" id="bussiness2">
-								<div class="row">
-									<div class="col-lg-6 col-md-12 text-left">
-										<h2 class="title iq-fw-8">SEO</h2>
-										<p class="mt-3">Desarrollamos estrategias SEO y posicionamiento web en buscadores para mejorar la
-											calidad de tu sitio web, maximizar tu tráfico orgánico y potenciar tu negocio online e incrementar
-											tus ventas.
-										
-										</p>
-									</div>
-									<div class="col-lg-6 col-md-12 ">
-										<img src="{% static 'core/images/breadcrumb/Servicios_SEO.png' %}" class="img-fluid" alt="seo">
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-			</div>
-		</section>
-		<!-- Tab END -->
-		{% include "./contact-form.html" %}
-	</div>
-	<footer>
-		<div class="iq-subscribe pattern-left  container position-relative" id="iq-subscribe">
-			<div class="pattern-right">
-				<div class="row align-items-center">
-					<div class="col-lg-6 col-md-12">
-						<div class="title-box text-left ">
-							<h2 class="title mb-3 text-white">¡Empezá a potenciar tus redes desde hoy!</h2>
-							<p class="text-white iq-fw-4 mb-0">Recibí contenido clave para potenciar tu negocio digital</p>
-						</div>
-					</div>
-					<div class="col-lg-6 col-md-12">
-						<div class="mt-5" id="container-form">
-							<form class="position-relative subscribe-form mt-5 mt-lg-0">
-								<div class="form-group mb-0">
-									<input type="email" class="form-control position-relative subscription-email mb-0" placeholder="Ingresá tu email">
-								</div>
-								<a class="slide-button button bt-subscribe subscription-button" href="javascript:void(0)" style="bottom: 2.5px;">
-									<div class="first">Suscríbete</div>
-									<div class="second">Suscríbete</div>
-								</a>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="contactinfo">
-			<div class="container p-0">
-				<div class="row ">
-					<div class="col-lg-4 col-md-6">
-						<div class="iq-footer-logo">
-							<a href="index.html"><img src="{% static 'core/images/footer/logo_fm.png' %}" class="img-fluid" alt="Logo FM"></a>
-						</div>
-						<div class="footer-copyright mb-4 iq-fw-5 mt-3">©Copyright 2021 FM Comunicación</div>
-						<div>
-							<div class="social-media d-inline-block float-left ml-4">
-								<ul class="social">
-									<!--                           <li><a href="javascript:void(0)"><i class="fab fa-facebook-f iq-fw-6"></i></a></li>-->
-									<li><a href="https://www.instagram.com/fm.comunicaciondigital/"><i class="fab fa-instagram iq-fw-6"></i></a>
-									</li>
-									<li><a href="https://www.pinterest.com/fmcomunicaciondigital"><i
-											class="fab fa-pinterest iq-fw-6"></i></a></li>
-									<!--                           <li><a href="javascript:void(0)"><i class="fab fa-linkedin iq-fw-6"></i></a></li>-->
-								</ul>
-							</div>
-						</div>
-						<div class="contact mt-4 d-inline-block">
-							<a href="tel:+5491136434315"> <i class="fa fa-phone"></i><span class="iq-fw-5"> +54 9 1136434315</span></a>
-							<div class="email d-inline-block"><a href="Mail:info@fmcomunicaciondigital.com">info@fmcomunicaciondigital.com</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 footer-link">
-						<h5 class="iq-fw-7 riq-mt-40">Links</h5>
-						<ul class="list-inline rmb-40">
-							<li class="list-item"><a href="{% url 'home' %}">Home</a></li>
-							<li class="list-item"><a href="#nosotros">Nosotros</a></li>
-							<li class="list-item"><a href="#servicios">Servicios</a></li>
-							<li class="list-item"><a href="blog.html">Blog</a></li>
-							<li class="list-item"><a href="#contacto">Contacto</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- back-to-top -->
-		<div id="back-to-top">
-			<a class="top" id="top" href="#top"><i class="ion-ios-arrow-thin-up"></i></a>
-		</div>
-		<!-- back-to-top End -->
-	</footer>
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="{% static 'core/js/jquery-min.js' %}"></script>
-	<!-- popper  -->
-	<script src="{% static 'core/js/popper.min.js' %}"></script>
-	<!--  bootstrap -->
-	<script src="{% static 'core/js/bootstrap.min.js' %}"></script>
-	<!-- Modernizr JavaScript -->
-	<script src="{% static 'core/js/modernizr.js' %}"></script>
-	<!-- Appear JavaScript -->
-	<script src="{% static 'core/js/appear.min.js' %}"></script>
-	<!-- Megamenu  -->
-	<script src="{% static 'core/js/mega_menu.min.js' %}"></script>
-	<!-- Timeline JavaScript -->
-	<script src="{% static 'core/js/timeline.js' %}"></script>
-	<!-- Wow -->
-	<script src="{% static 'core/js/wow.min.js' %}"></script>
-	<!-- scrollme -->
-	<script src="{% static 'core/js/jquery.scrollme.min.js' %}"></script>
-	<!-- countdown JavaScript -->
-	<script src="{% static 'core/js/countdown.js' %}"></script>
-	<!-- waypoints JavaScript -->
-	<script src="{% static 'core/js/waypoints.min.js' %}"></script>
-	<!-- Counterup JavaScript -->
-	<script src="{% static 'core/js/jquery.counterup.min.js' %}"></script>
-	<!-- Owl Carousel JavaScript -->
-	<script src="{% static 'core/js/owl.carousel.min.js' %}"></script>
-	<!-- Magnific Popup JavaScript -->
-	<script src="{% static 'core/js/jquery.magnific-popup.min.js' %}"></script>
-	<!-- Isotope JavaScript -->
-	<script src="{% static 'core/js/isotope.pkgd.min.js' %}"></script>
-	<!-- Progressbar JavaScript -->
-	<script src="{% static 'core/js/circle-progress.min.js' %}"></script>
-	<!-- Canvas JavaScript -->
-	<script src="{% static 'core/js/canvasjs.min.js' %}"></script>
-	<!-- Validate jQuery -->
-	<script src="{% static 'core/js/jquery.validate.min.js' %}"></script>
-	<!-- REVOLUTION JS FILES -->
-	<script src="{% static 'core/revslider/js/jquery.themepunch.tools.min.js' %}"></script>
-	<script src="{% static 'core/revslider/js/jquery.themepunch.revolution.min.js' %}"></script>
-	<!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
-	<script src="{% static 'core/revslider/js/extensions/revolution.extension.actions.min.js' %}"></script>
-	<script src="{% static 'core/revslider/js/extensions/revolution.extension.carousel.min.js' %}"></script>
-	<script src="{% static 'core/revslider/js/extensions/revolution.extension.kenburn.min.js' %}"></script>
-	<script src="{% static 'core/revslider/js/extensions/revolution.extension.layeranimation.min.js' %}"></script>
-	<script src="{% static 'core/revslider/js/extensions/revolution.extension.migration.min.js' %}"></script>
-	<script src="{% static 'core/revslider/js/extensions/revolution.extension.navigation.min.js' %}"></script>
-	<script src="{% static 'core/revslider/js/extensions/revolution.extension.parallax.min.js' %}"></script>
-	<script src="{% static 'core/revslider/js/extensions/revolution.extension.slideanims.min.js' %}"></script>
-	<script src="{% static 'core/revslider/js/extensions/revolution.extension.video.min.js' %}"></script>
-	<!-- <script src="{% static 'core/splide/dist/js/splide.min.js' %}"></script> -->
+<!-- Main Content -->
+<div class="main-content">
 
-	<!-- Retina JavaScript -->
-	<script src="{% static 'core/js/retina.min.js' %}"></script>
-	<!-- Custom JavaScript -->
-	<script src="{% static 'core/js/custom.js' %}"></script>
-	<script>
-		var tpj = jQuery;
-		
-		var revapi3;
-		tpj(document).ready(function () {
-			if (tpj("#rev_slider_3_1").revolution == undefined) {
-				revslider_showDoubleJqueryError("#rev_slider_3_1");
-			} else {
-				revapi3 = tpj("#rev_slider_3_1").show().revolution({
-					sliderType: "standard",
-					jsFileLocation: "//localhost/revslider-standalone/revslider-standalone/revslider/public/revslider/assets/js/",
-					sliderLayout: "fullwidth",
-					dottedOverlay: "none",
-					delay: 9000,
-					navigation: {
-						onHoverStop: "off",
-					},
-					visibilityLevels: [1240, 1024, 778, 480],
-					gridwidth: 1366,
-					gridheight: 790,
-					lazyType: "none",
-					parallax: {
-						type: "mouse",
-						origo: "enterpoint",
-						speed: 400,
-						levels: [5, 10, 15, 20, 25, 30, 35, 40, 45, 46, 47, 48, 49, 50, 51, 55],
-						type: "mouse",
-						disable_onmobile: "on",
-					},
-					shadow: 0,
-					spinner: "spinner0",
-					stopLoop: "off",
-					stopAfterLoops: -1,
-					stopAtSlide: -1,
-					shuffle: "off",
-					autoHeight: "off",
-					disableProgressBar: "on",
-					hideThumbsOnMobile: "off",
-					hideSliderAtLimit: 0,
-					hideCaptionAtLimit: 0,
-					hideAllCaptionAtLilmit: 0,
-					debugMode: false,
-					fallbacks: {
-						simplifyAll: "off",
-						nextSlideOnWindowFocus: "off",
-						disableFocusListener: false,
-					},
-				});
-			}
-		}); /*ready*/
-	</script>
-	<script src="{% static 'core/js/form.js' %}"></script>
-	<script charset="utf-8" type="text/javascript" src="{% static 'core/js.hsforms.net/forms/shell.js' %}"></script>
-	<script>
-		hbspt.forms.create({
-			region: "na1",
-			portalId: "20866299",
-			formId: "28a3c9cc-a0f0-4cf6-ad26-b16f1234ee37",
-			locale: "es-mx",
-			target: "#container-form",
-			cssClass: "errores-hubspot",
-			errorMessageClass: "inputs-list errores-hubspot",
-		});
-		hbspt.forms.create({
-			region: "na1",
-			portalId: "20866299",
-			formId: "6758ea78-a22e-48ce-9ace-5f339e8119a2",
-			locale: "es-mx",
-			target: "#form-contacto",
-			cssClass: "errores-hubspot",
-			errorMessageClass: "inputs-list errores-hubspot",
-		});
-	</script>
-</body>
-<!-- Mirrored from templates.iqonic.design/markethon/layout-1/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 27 Aug 2021 19:56:19 GMT -->
-</html>
+	<!-- Works -->
+	<section class="iq-works main-bg position-relative">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 text-center">
+					<div class="section-title">
+						<p class="mt-2 text-uppercase text-white iq-fw-3 iq-ls-3">la receta secreta</p>
+						<h2 class="title text-white  iq-fw-8">¿Cómo trabajamos junto a ustedes?</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 text-center">
+					<div class="iq-workinfo">
+						<div class="service-shap  mb-4 iq-rmt-40">
+							<img src="{% static 'core/images/work/01.png' %}" class="img-fluid " alt="Planicifación">
+						</div>
+						<h3 class="title text-white">1. Planificación</h3>
+						<span class="mb-0 text-uppercase text-white iq-fw-3 iq-ls-1">Nuestro equipo de profesionales trabaja en conjunto para elaborar una estrategia acorde a sus objetivos.</span>
+					</div>
+				</div>
+				<div class="col-lg-4 text-center">
+					<div class="iq-workinfo">
+						<div class="service-shap  mb-4 iq-rmt-40">
+							<img src="{% static 'core/images/work/02.png' %}" class="img-fluid " alt="Creación">
+						</div>
+						<h3 class="title text-white">2. Creación y diseño</h3>
+						<span class="mb-0 text-uppercase text-white iq-fw-3 iq-ls-1">Creamos contenido buscando cumplir con las últimas tendencias y atrapando a los usuarios.</span>
+					</div>
+				</div>
+				<div class="col-lg-4 text-center">
+					<div class="iq-workinfo">
+						<div class="service-shap  mb-4 iq-rmt-40">
+							<img src="{% static 'core/images/work/03.png' %}" class="img-fluid " alt="Optmización">
+						</div>
+						<h3 class="title text-white">3. Optimización</h3>
+						<span class="mb-0 text-uppercase text-white iq-fw-3 iq-ls-1">Trabajamos constantemente con las estadísticas de cada red social para poder optimizar al máximo nuestro potencial y alcance.</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="iq-way">
+			<img src="{% static 'core/images/work/2.png' %}" class="img-fluid" alt="image">
+		</div>
+	</section>
+	<!-- Project  -->
+	<section class="iq-project position-relative">
+		<div class="scrollme">
+			<img src="{% static 'core/images/others/13.png' %}" class="img-fluid project-overlay-left animateme"
+				data-when="enter"
+				data-from="0.5"
+				data-to="0"
+				data-translatey="100" alt="image">
+		</div>
+		<div class="container">
+			<div class="row mb-3 align-items-center">
+				<div class="col-lg-6 ">
+					<!--                     <h2  class="display-2  iq-fw-9 d-inline-block title"><span class="counter">100</span> <sup class=" d-inline-block">+</sup></h2>-->
+					<h3 class="d-inline-block  iq-fw-8">Marcas que confiaron en nosotros</h3>
+				</div>
+				<!--                  <div class="col-lg-6 ">-->
+				<!--                     <a class="slide-button button float-right explore-btn" href="portfolio.html">-->
+				<!--                  <div class="first">Ver más</div>-->
+				<!--                  <div class="second">Ver más</div>-->
+				<!--               </a>-->
+				<!--               </div>-->
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-12">
+					<div id="portfolio-carousel" class="owl-carousel" data-autoplay="true" data-loop="true" data-nav="true"
+						data-dots="false" data-items="4" data-items-laptop="3" data-items-tab="3" data-items-mobile="1"
+						data-items-mobile-sm="1" data-margin="30">
+						<div class="item">
+							<div class="iq-portfolio">
+								<img src="{% static 'core/images/clients/Klma.png' %}" class="img-fluid" alt="KLMA">
+								<div class="portfolio-info">
+									<a href="#"><span class="text-black">@klma.slowfashion</span></a>
+									<a href="#" class="text-uppercase text-gray float-right">CM + Diseño de contenido
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="iq-portfolio">
+								<img src="{% static 'core/images/clients/Benfresh.png' %}" class="img-fluid" alt="Benfresh Food">
+								<div class="portfolio-info">
+									<a href="#"><span class="text-black">@benfreshfood</span></a>
+									<a href="#" class="text-uppercase text-gray float-right">CM + Diseño + Publicidad Digital</a>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="iq-portfolio">
+								<img src="{% static 'core/images/clients/Etre.png' %}" class="img-fluid" alt="mariapuyalcueros">
+								<div class="portfolio-info">
+									<a href="#"><span class="text-black">@mariapuyalcueros</span></a>
+									<a href="#" class="text-uppercase text-gray float-right">CM + Publicidad Digital</a>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="iq-portfolio">
+								<img src="{% static 'core/images/clients/Noray.png' %}" class="img-fluid" alt="noraymuebles">
+								<div class="portfolio-info">
+									<a href="#"><span class="text-black">@noraymuebles</span></a>
+									<a href="#" class="text-uppercase text-gray float-right">CM + Diseño + Publicidad Digital</a>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="iq-portfolio">
+								<img src="{% static 'core/images/clients/Roller_si.png' %}" class="img-fluid" alt="@roller.si">
+								<div class="portfolio-info">
+									<a href="#"><span class="text-black">@roller.si</span></a>
+									<a href="#" class="text-uppercase text-gray float-right">CM + Diseño + Publicidad Digital</a>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="iq-portfolio">
+								<img src="{% static 'core/images/clients/Lapuntita.png' %}" class="img-fluid" alt="lapuntita_baires">
+								<div class="portfolio-info">
+									<a href="#"><span class="text-black">@lapuntita_baires</span></a>
+									<a href="#" class="text-uppercase text-gray float-right"> Community management
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="iq-portfolio">
+								<img src="{% static 'core/images/clients/Norves.png' %}" class="img-fluid" alt="@norvesjewels">
+								<div class="portfolio-info">
+									<a href="#"><span class="text-black">@norvesjewels</span></a>
+									<a href="#" class="text-uppercase text-gray float-right">CM + Diseño de contenido</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Project END -->
+	<!-- Choose From  -->
+	<section class="iq-choose-info position-relative" id="nosotros">
+		<div class="container">
+			<div class="row flex-row-reverse align-items-center h-100">
+				<div class="col-lg-6 align-self-center wow fadeInRight">
+					<h2 class="iq-fw-8 mb-2">Nosotros</h2>
+					<p>Somos un equipo de profesionales listos para enfrentar cualquier desafío. Nos apasiona nuestro trabajo e
+						intentamos sentir cada marca como propia, aportándole un valor extra al mismo desde nuestra experiencia y
+						conocimiento. <strong>¿Cuál es la clave?</strong> Abordar cada proyecto en equipo, otorgandole gran
+						importancia al aporte de cada uno para conseguir un resultado final óptimo. </p>
+				</div>
+				<div class="col-lg-6 iq-rmt-40">
+					<img src="{% static 'core/images/others/about.jpg' %}" class="img-fluid wow fadeInLeft" alt="image">
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Choose From END -->
+	<!-- Tab -->
+	<section class="iq-tab services-tab" id="iq-tab">
+		<div class="container" id="servicios">
+			<div class="row">
+				<div class="col-sm-12 text-center">
+					<div class="section-title">
+						<p class="iq-rmt-40 text-uppercase  iq-fw-3 iq-ls-3 mb-1">Nuestros Servicios</p>
+						<h2 class="title iq-fw-8">¿Qué les ofrecemos?</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<!-- Nav tabs -->
+					<ul class="nav nav-pills tabs-left justify-content-center" id="pills-tab2" role="tablist">
+						
+						<li class="nav-item">
+							<a class="nav-link" id="automation1-tab" data-toggle="pill" href="#automation1" role="tab"
+							aria-controls="automation1" aria-selected="false"><img width="100" height="auto"
+																					src="{% static 'core/images/icons/Community.png' %}"><span
+									class="mt-2 mb-2">Community Manager</span></a>
+						</li>
+						
+						<li class="nav-item">
+							<a class="nav-link" id="social1-tab" data-toggle="pill" href="#social1" role="tab" aria-controls="social1"
+							aria-selected="false"><img width="100" height="auto" src="{% static 'core/images/icons/DisenoGrafico.png' %}"><span
+									class="mt-2 mb-2">Diseño <br>Gráfico</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" id="cloud1-tab" data-toggle="pill" href="#cloud1" role="tab"
+							aria-controls="cloud1" aria-selected="true"><img width="100" height="auto"
+																				src="{% static 'core/images/icons/digital.png' %}"><span
+									class="mt-2 mb-2">Publicidad Digital</span></a>
+						</li>
+						
+						<li class="nav-item">
+							<a class="nav-link" id="bussiness1-tab" data-toggle="pill" href="#bussiness1" role="tab"
+							aria-controls="bussiness1" aria-selected="false"><img width="100" height="auto"
+																					src="{% static 'core/images/icons/DisenoWeb.png' %}"><span
+									class="mt-2 mb-2">Diseño <br>Web</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" id="bussiness2-tab" data-toggle="pill" href="#bussiness2" role="tab"
+							aria-controls="bussiness2" aria-selected="false"><img width="100" height="auto"
+																					src="{% static 'core/images/icons/Asesoria.png' %}"><span
+									class="mt-2 mb-2"> SEO</span><br></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" id="emailmarketing1-tab" data-toggle="pill" href="#emailmarketing1" role="tab"
+							aria-controls="emailmarketing1" aria-selected="false"><img width="100" height="auto"
+																						src="{% static 'core/images/icons/Planificacion.png' %}"><span
+									class="mt-2 mb-2">Creación de Contenido</span></a>
+						</li>
+					</ul>
+					<!-- Tab panes -->
+					<div class="tab-content">
+						<div class="tab-pane active" id="cloud1">
+							<div class="row">
+								<div class="col-lg-6 col-md-12 text-left">
+									<h2 class="title iq-fw-8">Publicidad Digital</h2>
+									<p class="mt-3">Creamos campañas publicitarias en Facebook, Instagram y Google, que realizadas con la
+										segmentación adecuada y una elección efectiva de objetivos, buscan conseguir las metas pautadas con
+										el cliente en un corto plazo.
+									
+									</p>
+								</div>
+								<div class="col-lg-6 col-md-12 ">
+									<img src="{% static 'core/images/breadcrumb/Servicios_Publicidad.png' %}" class="img-fluid" alt="Publicidad Digital">
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane" id="emailmarketing1">
+							<div class="row">
+								<div class="col-lg-6 col-md-12 text-left">
+									<h2 class="title iq-fw-8">Creación de Contenido</h2>
+									<p class="mt-3">Creación de contenido para tus redes sociales de
+										la mano de expertos y con la asistencia de Community Managers con el fin de mantener una
+										misma estética acorde a tu marca y así lograr una
+										armonía visual en tus publicaciones. En la actualidad, tener contenido que capte la atención de los
+										usuarios es fundamental. ¡Te ofrecemos Fotografía profesional en estudio y exteriores, foto producto
+										o en contexto, contenido para Reels, y más!
+									</p>
+								</div>
+								<div class="col-lg-6 col-md-12 ">
+									<img src="{% static 'core/images/breadcrumb/Servicios_CreacionContenido.png' %}" class="img-fluid"
+										alt="Creación de contenido">
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane" id="social1">
+							<div class="row">
+								<div class="col-lg-6 col-md-12 text-left">
+									<h2 class="title iq-fw-8">Diseño Gráfico</h2>
+									<p class="mt-3">Te acompañamos con el armado de tu marca, su logo, la elección de tipografías y paletas de colores. Perfecto para quienes recién estan comenzando o para quienes buscan renovar su marca. Además, nuestros diseñadores trabajan a la par de nuestros community managers diseñando tus publicaciones para mantener la misma identidad visual en el feed de Instagram y de esta forma lograr mejores resultados.
+									</p>
+								</div>
+								<div class="col-lg-6 col-md-12 ">
+									<img src="{% static 'core/images/breadcrumb/Servicios_DisenoGrafico.png' %}" class="img-fluid" alt="image">
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane" id="automation1">
+							<div class="row">
+								<div class="col-lg-6 col-md-12 text-left">
+									<h2 class="title iq-fw-8">Community Manager</h2>
+									<p class="mt-3">Construimos, gestionamos y administramos tus
+										redes sociales, creando relaciones estables con tus
+										seguidores. Buscaremos, con el armado de un plan
+										de comunicación, potenciar tus ventas y expandir
+										tu público, mostrando contenido de calidad y generando interacción constante con los usuarios
+									</p>
+								</div>
+								<div class="col-lg-6 col-md-12 ">
+									<img src="{% static 'core/images/breadcrumb/Servicios_CM.png' %}" class="img-fluid" alt="image">
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane" id="bussiness1">
+							<div class="row">
+								<div class="col-lg-6 col-md-12 text-left">
+									<h2 class="title iq-fw-8">Diseño Web</h2>
+									<p class="mt-3">Creamos tu landing para que puedas mostrar tus servicios desde un sitio web y de esta manera darte a conocer fuera de las redes sociales, con un perfil más profesional y tu propio estilo.</p>
+								</div>
+								<div class="col-lg-6 col-md-12 ">
+									<img src="{% static 'core/images/breadcrumb/Servicios_DisenoWeb.png' %}" class="img-fluid" alt="Diseño Web">
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane" id="bussiness2">
+							<div class="row">
+								<div class="col-lg-6 col-md-12 text-left">
+									<h2 class="title iq-fw-8">SEO</h2>
+									<p class="mt-3">Desarrollamos estrategias SEO y posicionamiento web en buscadores para mejorar la
+										calidad de tu sitio web, maximizar tu tráfico orgánico y potenciar tu negocio online e incrementar
+										tus ventas.
+									
+									</p>
+								</div>
+								<div class="col-lg-6 col-md-12 ">
+									<img src="{% static 'core/images/breadcrumb/Servicios_SEO.png' %}" class="img-fluid" alt="seo">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</section>
+	<!-- Tab END -->
+	{% include "./contact-form.html" %}
+</div>
+{% endblock content %}

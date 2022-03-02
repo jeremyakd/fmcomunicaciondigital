@@ -1,676 +1,269 @@
-<!doctype html>
-<html lang="en">
-   
-<!-- Mirrored from templates.iqonic.design/markethon/layout-1/all-blog-grid.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 27 Aug 2021 19:56:49 GMT -->
-<head>
-      <!-- Required meta tags -->
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <title>Markethon - Digital Marketing Agency Responsive HTML5 Template</title>
-      <!-- Favicon -->
-      <link rel="shortcut icon" href="images/favicon.ico">
-      <!-- Bootstrap CSS -->
-      <link rel="stylesheet" href="css/bootstrap.min.css">
-      <!-- Typography CSS -->
-      <link rel="stylesheet" href="css/typography.css">
-      <!-- Style CSS -->
-      <link rel="stylesheet" href="css/style.css">
-      <!-- Responsive CSS -->
-      <link rel="stylesheet" href="css/responsive.css">
-   </head>
-   <body>
-      <!-- loading -->
-      <div id="loading">
-         <div id="loading-center">
-            <img src="images/loader.gif" alt="loder">
+{% extends "core/base.html" %}
+
+{% load static %}
+{% block content %}
+
+   <!-- Breadcrumb -->
+   <section class="iq-breadcrumb">
+      <div class="iq-breadcrumb-info">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-12 col-md-7 align-self-center">
+                  <h2 class="iq-fw-8 mb-3">Blog</h2>
+                  <nav aria-label="breadcrumb">
+                     <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">All Blog Grid</li>
+                     </ol>
+                  </nav>
+               </div>
+               <div class="col-md-5">
+                  <img src="{% static 'core/images/breadcrumb/blog.png' %}" class="img-fluid" alt="image">
+               </div>
+            </div>
          </div>
       </div>
-      <!-- loading End -->
-      <!-- Header -->
-      <header id="main-header" class="header-one">
-         <!-- menu start -->
-         <nav id="menu-1" class="mega-menu" data-color="">
-            <!-- menu list items container -->
-            <div class="menu-list-items">
-               <div class="container-fluid">
-                  <div class="row">
-                     <div class="col-sm-12">
-                        <!-- menu logo -->
-                        <ul class="menu-logo">
-                           <li>
-                              <a href="index.html"><img src="images/logo.png" alt="logo" class="img-fluid"></a>
-                           </li>
-                        </ul>
-                        <!-- menu search bar -->
-                        <ul class="menu-search-bar">
-                           <li>
-                              <form method="post" action="#">
-                                 <label>
-                                    <input name="menu_search_bar" placeholder="Search" type="search">
-                                    <i class="fas fa-search"></i>
-                                 </label>
-                              </form>
-                           </li>
-                           <li class="menu-contact iq-fw-5"><a href="tel:0123456789" ><i class="fas fa-phone pr-1 "></i> 0 123 456 789</a></li>
-                        </ul>
-                        <!-- menu links -->
-                        <ul class="menu-links">
-                           <!-- active class -->
-                           <li >
-                              <a href="javascript:void(0)">Home</a>
-                              <!-- drop down multilevel  -->
-                              <ul class="drop-down-multilevel">
-                                 <li><a href="index.html">Home 1</a></li>
-                                 <li><a href="index-2.html">Home 2 </a></li>
-                                 <li><a href="index-3.html">Home 3 </a></li>
-                                 <li><a href="index-4.html">Home 4 </a></li>
-                                 <li><a href="#">Home 5 <span class="badge badge-danger">Soon</span></a></li>
-                              </ul>
-                           </li>
-                           <li>
-                              <a href="javascript:void(0)">Pages</a>
-                              <!-- drop down full width -->
-                              <ul class="drop-down-multilevel ">
-                                 <li>
-                                    <a href="javascript:void(0)">  About <i class="fas fa-angle-right "></i></a>
-                                    <!-- drop down third level -->
-                                    <ul class="drop-down-multilevel">
-                                       <li><a href="about-us.html">About us</a></li>
-                                       <li><a href="about-me.html">About me</a></li>
-                                    </ul>
-                                 </li>
-                                 <li>
-                                    <a href="javascript:void(0)">  Other Pages <i class="fas fa-angle-right "></i></a>
-                                    <!-- drop down third level -->
-                                    <ul class="drop-down-multilevel">
-                                       <li><a href="coming-soon.html">Comming Soon</a></li>
-                                       <li><a href="client.html">Clients</a></li>
-                                       <li><a href="process.html">Process</a></li>
-                                       <li><a href="404.html">404 Page</a></li>
-                                       <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                                       <li><a href="maintenance.html">Maintenance</a></li>
-                                       <li><a href="thankyou.html">Thank You</a></li>
-                                    </ul>
-                                 </li>
-                                 <li>
-                                    <a href="javascript:void(0)"> Services <i class="fas fa-angle-right "></i></a>
-                                    <!-- drop down third level -->
-                                    <ul class="drop-down-multilevel">
-                                       <li><a href="service.html">Service</a></li>
-                                       <li><a href="service-detail.html">Service Details</a></li>
-                                    </ul>
-                                 </li>
-                                 <li>
-                                    <a href="javascript:void(0)">Team <i class="fas fa-angle-right "></i></a>
-                                    <!-- drop down third level -->
-                                    <ul class="drop-down-multilevel">
-                                       <li><a href="team.html">Team</a></li>
-                                       <li><a href="team-detail.html">Team Details</a></li>
-                                    </ul>
-                                 </li>
-                                 <li>
-                                    <a href="javascript:void(0)">Login Register <i class="fas fa-angle-right "></i></a>
-                                    <!-- drop down third level -->
-                                    <ul class="drop-down-multilevel">
-                                       <li><a href="login.html">Login</a></li>
-                                       <li><a href="register.html">Register</a></li>
-                                       <li><a href="password-reset.html">Password Reset</a></li>
-                                    </ul>
-                                 </li>
-                                 <li><a href="pricing.html">Pricing Table</a></li>
-                                 <li><a href="faq.html">FAQ</a></li>
-                              </ul>
-                           </li>
-                           <li>
-                              <a href="javascript:void(0)">Portfolio</a>
-                              <!-- drop down third level -->
-                              <ul class="drop-down-multilevel">
-                                 <li><a href="portfolio.html">Portfolio</a></li>
-                                 <li><a href="porfolio-detail.html">Portfolio Details</a></li>
-                                 <li><a href="portfolio-two.html">Portfolio 2 column</a></li>
-                                 <li><a href="full-3-portfolio.html">Portfolio 3 column</a></li>
-                                 <li><a href="full-4-portfolio.html">Portfolio 4 column</a></li>
-                                 <li><a href="full-5-portfolio.html">Portfolio 5 column</a></li>
-                              </ul>
-                           </li>
-                           <li>
-                              <a href="javascript:void(0)" class="active">Blog</a>
-                              <!-- drop down third level -->
-                              <ul class="drop-down-multilevel">
-                                 <li>
-                                    <a href="javascript:void(0)"> Blog Details <i class="fas fa-angle-right "></i></a>
-                                    <!-- drop down third level -->
-                                    <ul class="drop-down-multilevel">
-                                       <li><a href="blog-details-left-sidebar.html">Blog Detail Left Sidebar</a></li>
-                                       <li><a href="blog-details-right-sidebar.html">Blog Detail Right Sidebar</a></li>
-                                    </ul>
-                                 </li>
-                                 <li>
-                                    <a href="javascript:void(0)"> Blog Grid <i class="fas fa-angle-right "></i></a>
-                                    <!-- drop down third level -->
-                                    <ul class="drop-down-multilevel">
-                                       <li class="active"><a href="all-blog-grid.html">All Blog Grid</a></li>
-                                       <li><a href="blog-grid-left-sidebar.html">Blog Grid Left Sidebar</a></li>
-                                       <li><a href="blog-grid-right-sidebar.html">Blog Grid Right Sidebar</a></li>
-                                    </ul>
-                                 </li>
-                                 <li>
-                                    <a href="javascript:void(0)"> Blog List <i class="fas fa-angle-right "></i></a>
-                                    <!-- drop down third level -->
-                                    <ul class="drop-down-multilevel">
-                                       <li><a href="all-blog-list.html">All Blog List</a></li>
-                                       <li><a href="blog-list-left-sidebar.html">Blog List Left Sidebar</a></li>
-                                       <li><a href="blog-list-right-sidebar.html">Blog List Right Sidebar</a></li>
-                                    </ul>
-                                 </li>
-                              </ul>
-                           </li>
-                           <li><a href="contact-us.html">Contact us</a></li>
-                        </ul>
+      <div class="iq-breadcrumb-img">
+      <img src="{% static 'core/images/breadcrumb/02.png' %}" class="img-fluid breadcrumb-two" alt="image">
+      </div>
+   </section>
+   <!-- Breadcrumb END -->
+   <!-- Main Content -->
+   <div class="main-content">
+      <!-- Blogs -->
+      <section class="iq-blogs">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="main-blog">
+                     <div class="blog-img">
+                        <img src="{% static 'core/images/blog/01.jpg' %}" class="img-fluid" alt="image">
+                     </div>
+                     <div class="blog-detail">
+                        <a class="main-color iq-fw-8" href="blog-details-left-sidebar.html">Design Concept</a>
+                        <a href="blog-details-left-sidebar.html">
+                           <h5 class="mt-1 iq-fw-8">Fully dedicated finding.</h5>
+                        </a>
+                        <p class="mb-0">Progravida nibh vel velit auctor alinean sollicitudin.</p>
+                        <div class="blog-info">
+                           <a href="#"><img src="{% static 'core/images/blog/clients/01.jpg' %}" class="img-fluid rounded-circle mr-3 user-img" alt="image"><span class="iq-fw-8 font-c iq-font-18">Glen Jax</span></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="main-blog">
+                     <div class="blog-img">
+                        <img src="{% static 'core/images/blog/02.jpg' %}" class="img-fluid" alt="image">
+                     </div>
+                     <div class="blog-detail">
+                        <a class="main-color iq-fw-8" href="blog-details-left-sidebar.html">Design Concept</a>
+                        <a href="blog-details-left-sidebar.html">
+                           <h5 class="mt-1 iq-fw-8">Auctor alinean.</h5>
+                        </a>
+                        <p class="mb-0">Progravida nibh vel velit auctor alinean sollicitudin.</p>
+                        <div class="blog-info">
+                           <a href="#"><img src="{% static 'core/images/blog/clients/02.jpg' %}" class="img-fluid rounded-circle mr-3 user-img" alt="image"><span class="iq-fw-8 font-c iq-font-18">John Deo</span></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="main-blog">
+                     <div class="blog-img">
+                        <img src="{% static 'core/images/blog/03.jpg' %}" class="img-fluid" alt="image">
+                     </div>
+                     <div class="blog-detail">
+                        <a class="main-color iq-fw-8" href="blog-details-left-sidebar.html">Design Concept</a>
+                        <a href="blog-details-left-sidebar.html">
+                           <h5 class="mt-1 iq-fw-8">Progravida nibh vel.</h5>
+                        </a>
+                        <p class="mb-0">Progravida nibh vel velit auctor alinean sollicitudin.</p>
+                        <div class="blog-info">
+                           <a href="#"><img src="{% static 'core/images/blog/clients/03.jpg' %}" class="img-fluid rounded-circle mr-3 user-img" alt="image"><span class="iq-fw-8 font-c iq-font-18">Glen Jax</span></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="main-blog">
+                     <div class="blog-img">
+                        <img src="{% static 'core/images/blog/04.jpg' %}" class="img-fluid" alt="image">
+                     </div>
+                     <div class="blog-detail">
+                        <a class="main-color iq-fw-8" href="blog-details-left-sidebar.html">Design Concept</a>
+                        <a href="blog-details-left-sidebar.html">
+                           <h5 class="mt-1 iq-fw-8">Alinean sollicitudin.</h5>
+                        </a>
+                        <p class="mb-0">Progravida nibh vel velit auctor alinean sollicitudin.</p>
+                        <div class="blog-info">
+                           <a href="#"><img src="{% static 'core/images/blog/clients/01.jpg' %}" class="img-fluid rounded-circle mr-3 user-img" alt="image"><span class="iq-fw-8 font-c iq-font-18">Nik Jorden</span></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="main-blog">
+                     <div class="blog-img">
+                        <img src="{% static 'core/images/blog/01.jpg' %}" class="img-fluid" alt="image">
+                     </div>
+                     <div class="blog-detail">
+                        <a class="main-color iq-fw-8" href="blog-details-left-sidebar.html">Design Concept</a>
+                        <a href="blog-details-left-sidebar.html">
+                           <h5 class="mt-1 iq-fw-8">Fully dedicated finding.</h5>
+                        </a>
+                        <p class="mb-0">Progravida nibh vel velit auctor alinean sollicitudin.</p>
+                        <div class="blog-info">
+                           <a href="#"><img src="{% static 'core/images/blog/clients/02.jpg' %}" class="img-fluid rounded-circle mr-3 user-img" alt="image"><span class="iq-fw-8 font-c iq-font-18">Kips Leo</span></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="main-blog">
+                     <div class="blog-img">
+                        <img src="{% static 'core/images/blog/02.jpg' %}" class="img-fluid" alt="image">
+                     </div>
+                     <div class="blog-detail">
+                        <a class="main-color iq-fw-8" href="blog-details-left-sidebar.html">Design Concept</a>
+                        <a href="blog-details-left-sidebar.html">
+                           <h5 class="mt-1 iq-fw-8">Progravida nibh vel.</h5>
+                        </a>
+                        <p class="mb-0">Progravida nibh vel velit auctor alinean sollicitudin.</p>
+                        <div class="blog-info">
+                           <a href="#"><img src="{% static 'core/images/blog/clients/03.jpg' %}" class="img-fluid rounded-circle mr-3 user-img" alt="image"><span class="iq-fw-8 font-c iq-font-18">John Deo</span></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="main-blog">
+                     <div class="blog-img">
+                        <img src="{% static 'core/images/blog/03.jpg' %}" class="img-fluid" alt="image">
+                     </div>
+                     <div class="blog-detail">
+                        <a class="main-color iq-fw-8" href="blog-details-left-sidebar.html">Design Concept</a>
+                        <a href="blog-details-left-sidebar.html">
+                           <h5 class="mt-1 iq-fw-8">Auctor alinean.</h5>
+                        </a>
+                        <p class="mb-0">Progravida nibh vel velit auctor alinean sollicitudin.</p>
+                        <div class="blog-info">
+                           <a href="#"><img src="{% static 'core/images/blog/clients/01.jpg' %}" class="img-fluid rounded-circle mr-3 user-img" alt="image"><span class="iq-fw-8 font-c iq-font-18">Glen Jax</span></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="main-blog">
+                     <div class="blog-img">
+                        <img src="{% static 'core/images/blog/04.jpg' %}" class="img-fluid" alt="image">
+                     </div>
+                     <div class="blog-detail">
+                        <a class="main-color iq-fw-8" href="blog-details-left-sidebar.html">Design Concept</a>
+                        <a href="blog-details-left-sidebar.html">
+                           <h5 class="mt-1 iq-fw-8">Alinean sollicitudin.</h5>
+                        </a>
+                        <p class="mb-0">Progravida nibh vel velit auctor alinean sollicitudin.</p>
+                        <div class="blog-info">
+                           <a href="#"><img src="{% static 'core/images/blog/clients/02.jpg' %}" class="img-fluid rounded-circle mr-3 user-img" alt="image"><span class="iq-fw-8 font-c iq-font-18">Kips Leo</span></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="main-blog">
+                     <div class="blog-img">
+                        <img src="{% static 'core/images/blog/01.jpg' %}" class="img-fluid" alt="image">
+                     </div>
+                     <div class="blog-detail">
+                        <a class="main-color iq-fw-8" href="blog-details-left-sidebar.html">Design Concept</a>
+                        <a href="blog-details-left-sidebar.html">
+                           <h5 class="mt-1 iq-fw-8">Fully dedicated finding.</h5>
+                        </a>
+                        <p class="mb-0">Progravida nibh vel velit auctor alinean sollicitudin.</p>
+                        <div class="blog-info">
+                           <a href="#"><img src="{% static 'core/images/blog/clients/03.jpg' %}" class="img-fluid rounded-circle mr-3 user-img" alt="image"><span class="iq-fw-8 font-c iq-font-18">Glen Jax</span></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="main-blog">
+                     <div class="blog-img">
+                        <img src="{% static 'core/images/blog/02.jpg' %}" class="img-fluid" alt="image">
+                     </div>
+                     <div class="blog-detail">
+                        <a class="main-color iq-fw-8" href="blog-details-left-sidebar.html">Design Concept</a>
+                        <a href="blog-details-left-sidebar.html">
+                           <h5 class="mt-1 iq-fw-8">Progravida nibh vel.</h5>
+                        </a>
+                        <p class="mb-0">Progravida nibh vel velit auctor alinean sollicitudin.</p>
+                        <div class="blog-info">
+                           <a href="#"><img src="{% static 'core/images/blog/clients/01.jpg' %}" class="img-fluid rounded-circle mr-3 user-img" alt="image"><span class="iq-fw-8 font-c iq-font-18">Nik Jorden</span></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="main-blog riq-mt-40">
+                     <div class="blog-img">
+                        <img src="{% static 'core/images/blog/03.jpg' %}" class="img-fluid" alt="image">
+                     </div>
+                     <div class="blog-detail">
+                        <a class="main-color iq-fw-8" href="blog-details-left-sidebar.html">Design Concept</a>
+                        <a href="blog-details-left-sidebar.html">
+                           <h5 class="mt-1 iq-fw-8">Auctor alinean.</h5>
+                        </a>
+                        <p class="mb-0">Progravida nibh vel velit auctor alinean sollicitudin.</p>
+                        <div class="blog-info">
+                           <a href="#"><img src="{% static 'core/images/blog/clients/02.jpg' %}" class="img-fluid rounded-circle mr-3 user-img" alt="image"><span class="iq-fw-8 font-c iq-font-18">John Deo</span></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="main-blog riq-mt-40">
+                     <div class="blog-img">
+                        <img src="{% static 'core/images/blog/04.jpg' %}" class="img-fluid" alt="image">
+                     </div>
+                     <div class="blog-detail">
+                        <a class="main-color iq-fw-8" href="blog-details-left-sidebar.html">Design Concept</a>
+                        <a href="blog-details-left-sidebar.html">
+                           <h5 class="mt-1 iq-fw-8">Alinean sollicitudin.</h5>
+                        </a>
+                        <p class="mb-0">Progravida nibh vel velit auctor alinean sollicitudin.</p>
+                        <div class="blog-info">
+                           <a href="#"><img src="{% static 'core/images/blog/clients/03.jpg' %}" class="img-fluid rounded-circle mr-3 user-img" alt="image"><span class="iq-fw-8 font-c iq-font-18">Glen Jax</span></a>
+                        </div>
                      </div>
                   </div>
                </div>
             </div>
-         </nav>
-         <!-- menu end -->
-      </header>
-      <!-- Header END -->
-      <!-- Breadcrumb -->
-      <section class="iq-breadcrumb">
-         
-         <div class="iq-breadcrumb-info">
-            <div class="container">
-               <div class="row">
-                  <div class="col-sm-12 col-md-7 align-self-center">
-                     <h2 class="iq-fw-8 mb-3">Blog</h2>
-                     <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                           <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                           <li class="breadcrumb-item active" aria-current="page">All Blog Grid</li>
-                        </ol>
-                     </nav>
-                  </div>
-                  <div class="col-md-5">
-                     <img src="images/breadcrumb/blog.png" class="img-fluid" alt="image">
-                  </div>
+            <div class="row mt-5">
+               <div class="col-sm-12">
+                  <nav>
+                     <ul class="pagination justify-content-center">
+                        <li class="page-item">
+                           <span class="page-link"><i class="fas fa-arrow-left"></i></span>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="javascript:void(0)">1</a></li>
+                        <li class="page-item active" aria-current="page">
+                           <span class="page-link">
+                              2
+                              <span class="sr-only">(current)</span>
+                           </span>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="javascript:void(0)">3</a></li>
+                        <li class="page-item"><a class="page-link" href="javascript:void(0)">4</a></li>
+                        <li class="page-item">
+                           <a class="page-link" href="#"><i class="fas fa-arrow-right"></i></a>
+                        </li>
+                     </ul>
+                  </nav>
                </div>
             </div>
          </div>
-         <div class="iq-breadcrumb-img">
-        <img src="images/breadcrumb/02.png" class="img-fluid breadcrumb-two" alt="image">
-      </div>
       </section>
-      <!-- Breadcrumb END -->
-      <!-- Main Content -->
-      <div class="main-content">
-         <!-- Blogs -->
-         <section class="iq-blogs">
-            <div class="container">
-               <div class="row">
-                  <div class="col-lg-4 col-md-6 col-sm-12">
-                     <div class="main-blog">
-                        <div class="blog-img">
-                           <img src="images/blog/01.jpg" class="img-fluid" alt="image">
-                        </div>
-                        <div class="blog-detail">
-                           <a class="main-color iq-fw-8" href="blog-details-left-sidebar.html">Design Concept</a>
-                           <a href="blog-details-left-sidebar.html">
-                              <h5 class="mt-1 iq-fw-8">Fully dedicated finding.</h5>
-                           </a>
-                           <p class="mb-0">Progravida nibh vel velit auctor alinean sollicitudin.</p>
-                           <div class="blog-info">
-                              <a href="#"><img src="images/blog/clients/01.jpg" class="img-fluid rounded-circle mr-3 user-img" alt="image"><span class="iq-fw-8 font-c iq-font-18">Glen Jax</span></a>
-                              <ul class="d-inline-block float-right">
-                                 <li class="d-inline-block"><a href="javascript:void(0)"><i class="far fa-thumbs-up"></i> <span class="iq-fw-8 iq-font-14">90</span></a></li>
-                                 <li class="d-inline-block"><a href="javascript:void(0)"><i class="far fa-comment-alt"></i> <span class="iq-fw-8 iq-font-14">120</span></a></li>
-                              </ul>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6 col-sm-12">
-                     <div class="main-blog">
-                        <div class="blog-img">
-                           <img src="images/blog/02.jpg" class="img-fluid" alt="image">
-                        </div>
-                        <div class="blog-detail">
-                           <a class="main-color iq-fw-8" href="blog-details-left-sidebar.html">Design Concept</a>
-                           <a href="blog-details-left-sidebar.html">
-                              <h5 class="mt-1 iq-fw-8">Auctor alinean.</h5>
-                           </a>
-                           <p class="mb-0">Progravida nibh vel velit auctor alinean sollicitudin.</p>
-                           <div class="blog-info">
-                              <a href="#"><img src="images/blog/clients/02.jpg" class="img-fluid rounded-circle mr-3 user-img" alt="image"><span class="iq-fw-8 font-c iq-font-18">John Deo</span></a>
-                              <ul class="d-inline-block float-right">
-                                 <li class="d-inline-block"><a href="javascript:void(0)"><i class="far fa-thumbs-up"></i> <span class="iq-fw-8 iq-font-14">90</span></a></li>
-                                 <li class="d-inline-block"><a href="javascript:void(0)"><i class="far fa-comment-alt"></i> <span class="iq-fw-8 iq-font-14">120</span></a></li>
-                              </ul>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6 col-sm-12">
-                     <div class="main-blog">
-                        <div class="blog-img">
-                           <img src="images/blog/03.jpg" class="img-fluid" alt="image">
-                        </div>
-                        <div class="blog-detail">
-                           <a class="main-color iq-fw-8" href="blog-details-left-sidebar.html">Design Concept</a>
-                           <a href="blog-details-left-sidebar.html">
-                              <h5 class="mt-1 iq-fw-8">Progravida nibh vel.</h5>
-                           </a>
-                           <p class="mb-0">Progravida nibh vel velit auctor alinean sollicitudin.</p>
-                           <div class="blog-info">
-                              <a href="#"><img src="images/blog/clients/03.jpg" class="img-fluid rounded-circle mr-3 user-img" alt="image"><span class="iq-fw-8 font-c iq-font-18">Glen Jax</span></a>
-                              <ul class="d-inline-block float-right">
-                                 <li class="d-inline-block"><a href="javascript:void(0)"><i class="far fa-thumbs-up"></i> <span class="iq-fw-8 iq-font-14">90</span></a></li>
-                                 <li class="d-inline-block"><a href="javascript:void(0)"><i class="far fa-comment-alt"></i> <span class="iq-fw-8 iq-font-14">120</span></a></li>
-                              </ul>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6 col-sm-12">
-                     <div class="main-blog">
-                        <div class="blog-img">
-                           <img src="images/blog/04.jpg" class="img-fluid" alt="image">
-                        </div>
-                        <div class="blog-detail">
-                           <a class="main-color iq-fw-8" href="blog-details-left-sidebar.html">Design Concept</a>
-                           <a href="blog-details-left-sidebar.html">
-                              <h5 class="mt-1 iq-fw-8">Alinean sollicitudin.</h5>
-                           </a>
-                           <p class="mb-0">Progravida nibh vel velit auctor alinean sollicitudin.</p>
-                           <div class="blog-info">
-                              <a href="#"><img src="images/blog/clients/01.jpg" class="img-fluid rounded-circle mr-3 user-img" alt="image"><span class="iq-fw-8 font-c iq-font-18">Nik Jorden</span></a>
-                              <ul class="d-inline-block float-right">
-                                 <li class="d-inline-block"><a href="javascript:void(0)"><i class="far fa-thumbs-up"></i> <span class="iq-fw-8 iq-font-14">90</span></a></li>
-                                 <li class="d-inline-block"><a href="javascript:void(0)"><i class="far fa-comment-alt"></i> <span class="iq-fw-8 iq-font-14">120</span></a></li>
-                              </ul>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6 col-sm-12">
-                     <div class="main-blog">
-                        <div class="blog-img">
-                           <img src="images/blog/01.jpg" class="img-fluid" alt="image">
-                        </div>
-                        <div class="blog-detail">
-                           <a class="main-color iq-fw-8" href="blog-details-left-sidebar.html">Design Concept</a>
-                           <a href="blog-details-left-sidebar.html">
-                              <h5 class="mt-1 iq-fw-8">Fully dedicated finding.</h5>
-                           </a>
-                           <p class="mb-0">Progravida nibh vel velit auctor alinean sollicitudin.</p>
-                           <div class="blog-info">
-                              <a href="#"><img src="images/blog/clients/02.jpg" class="img-fluid rounded-circle mr-3 user-img" alt="image"><span class="iq-fw-8 font-c iq-font-18">Kips Leo</span></a>
-                              <ul class="d-inline-block float-right">
-                                 <li class="d-inline-block"><a href="javascript:void(0)"><i class="far fa-thumbs-up"></i> <span class="iq-fw-8 iq-font-14">90</span></a></li>
-                                 <li class="d-inline-block"><a href="javascript:void(0)"><i class="far fa-comment-alt"></i> <span class="iq-fw-8 iq-font-14">120</span></a></li>
-                              </ul>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6 col-sm-12">
-                     <div class="main-blog">
-                        <div class="blog-img">
-                           <img src="images/blog/02.jpg" class="img-fluid" alt="image">
-                        </div>
-                        <div class="blog-detail">
-                           <a class="main-color iq-fw-8" href="blog-details-left-sidebar.html">Design Concept</a>
-                           <a href="blog-details-left-sidebar.html">
-                              <h5 class="mt-1 iq-fw-8">Progravida nibh vel.</h5>
-                           </a>
-                           <p class="mb-0">Progravida nibh vel velit auctor alinean sollicitudin.</p>
-                           <div class="blog-info">
-                              <a href="#"><img src="images/blog/clients/03.jpg" class="img-fluid rounded-circle mr-3 user-img" alt="image"><span class="iq-fw-8 font-c iq-font-18">John Deo</span></a>
-                              <ul class="d-inline-block float-right">
-                                 <li class="d-inline-block"><a href="javascript:void(0)"><i class="far fa-thumbs-up"></i> <span class="iq-fw-8 iq-font-14">90</span></a></li>
-                                 <li class="d-inline-block"><a href="javascript:void(0)"><i class="far fa-comment-alt"></i> <span class="iq-fw-8 iq-font-14">120</span></a></li>
-                              </ul>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6 col-sm-12">
-                     <div class="main-blog">
-                        <div class="blog-img">
-                           <img src="images/blog/03.jpg" class="img-fluid" alt="image">
-                        </div>
-                        <div class="blog-detail">
-                           <a class="main-color iq-fw-8" href="blog-details-left-sidebar.html">Design Concept</a>
-                           <a href="blog-details-left-sidebar.html">
-                              <h5 class="mt-1 iq-fw-8">Auctor alinean.</h5>
-                           </a>
-                           <p class="mb-0">Progravida nibh vel velit auctor alinean sollicitudin.</p>
-                           <div class="blog-info">
-                              <a href="#"><img src="images/blog/clients/01.jpg" class="img-fluid rounded-circle mr-3 user-img" alt="image"><span class="iq-fw-8 font-c iq-font-18">Glen Jax</span></a>
-                              <ul class="d-inline-block float-right">
-                                 <li class="d-inline-block"><a href="javascript:void(0)"><i class="far fa-thumbs-up"></i> <span class="iq-fw-8 iq-font-14">90</span></a></li>
-                                 <li class="d-inline-block"><a href="javascript:void(0)"><i class="far fa-comment-alt"></i> <span class="iq-fw-8 iq-font-14">120</span></a></li>
-                              </ul>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6 col-sm-12">
-                     <div class="main-blog">
-                        <div class="blog-img">
-                           <img src="images/blog/04.jpg" class="img-fluid" alt="image">
-                        </div>
-                        <div class="blog-detail">
-                           <a class="main-color iq-fw-8" href="blog-details-left-sidebar.html">Design Concept</a>
-                           <a href="blog-details-left-sidebar.html">
-                              <h5 class="mt-1 iq-fw-8">Alinean sollicitudin.</h5>
-                           </a>
-                           <p class="mb-0">Progravida nibh vel velit auctor alinean sollicitudin.</p>
-                           <div class="blog-info">
-                              <a href="#"><img src="images/blog/clients/02.jpg" class="img-fluid rounded-circle mr-3 user-img" alt="image"><span class="iq-fw-8 font-c iq-font-18">Kips Leo</span></a>
-                              <ul class="d-inline-block float-right">
-                                 <li class="d-inline-block"><a href="javascript:void(0)"><i class="far fa-thumbs-up"></i> <span class="iq-fw-8 iq-font-14">90</span></a></li>
-                                 <li class="d-inline-block"><a href="javascript:void(0)"><i class="far fa-comment-alt"></i> <span class="iq-fw-8 iq-font-14">120</span></a></li>
-                              </ul>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6 col-sm-12">
-                     <div class="main-blog">
-                        <div class="blog-img">
-                           <img src="images/blog/01.jpg" class="img-fluid" alt="image">
-                        </div>
-                        <div class="blog-detail">
-                           <a class="main-color iq-fw-8" href="blog-details-left-sidebar.html">Design Concept</a>
-                           <a href="blog-details-left-sidebar.html">
-                              <h5 class="mt-1 iq-fw-8">Fully dedicated finding.</h5>
-                           </a>
-                           <p class="mb-0">Progravida nibh vel velit auctor alinean sollicitudin.</p>
-                           <div class="blog-info">
-                              <a href="#"><img src="images/blog/clients/03.jpg" class="img-fluid rounded-circle mr-3 user-img" alt="image"><span class="iq-fw-8 font-c iq-font-18">Glen Jax</span></a>
-                              <ul class="d-inline-block float-right">
-                                 <li class="d-inline-block"><a href="javascript:void(0)"><i class="far fa-thumbs-up"></i> <span class="iq-fw-8 iq-font-14">90</span></a></li>
-                                 <li class="d-inline-block"><a href="javascript:void(0)"><i class="far fa-comment-alt"></i> <span class="iq-fw-8 iq-font-14">120</span></a></li>
-                              </ul>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6 col-sm-12">
-                     <div class="main-blog">
-                        <div class="blog-img">
-                           <img src="images/blog/02.jpg" class="img-fluid" alt="image">
-                        </div>
-                        <div class="blog-detail">
-                           <a class="main-color iq-fw-8" href="blog-details-left-sidebar.html">Design Concept</a>
-                           <a href="blog-details-left-sidebar.html">
-                              <h5 class="mt-1 iq-fw-8">Progravida nibh vel.</h5>
-                           </a>
-                           <p class="mb-0">Progravida nibh vel velit auctor alinean sollicitudin.</p>
-                           <div class="blog-info">
-                              <a href="#"><img src="images/blog/clients/01.jpg" class="img-fluid rounded-circle mr-3 user-img" alt="image"><span class="iq-fw-8 font-c iq-font-18">Nik Jorden</span></a>
-                              <ul class="d-inline-block float-right">
-                                 <li class="d-inline-block"><a href="javascript:void(0)"><i class="far fa-thumbs-up"></i> <span class="iq-fw-8 iq-font-14">90</span></a></li>
-                                 <li class="d-inline-block"><a href="javascript:void(0)"><i class="far fa-comment-alt"></i> <span class="iq-fw-8 iq-font-14">120</span></a></li>
-                              </ul>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6 col-sm-12">
-                     <div class="main-blog riq-mt-40">
-                        <div class="blog-img">
-                           <img src="images/blog/03.jpg" class="img-fluid" alt="image">
-                        </div>
-                        <div class="blog-detail">
-                           <a class="main-color iq-fw-8" href="blog-details-left-sidebar.html">Design Concept</a>
-                           <a href="blog-details-left-sidebar.html">
-                              <h5 class="mt-1 iq-fw-8">Auctor alinean.</h5>
-                           </a>
-                           <p class="mb-0">Progravida nibh vel velit auctor alinean sollicitudin.</p>
-                           <div class="blog-info">
-                              <a href="#"><img src="images/blog/clients/02.jpg" class="img-fluid rounded-circle mr-3 user-img" alt="image"><span class="iq-fw-8 font-c iq-font-18">John Deo</span></a>
-                              <ul class="d-inline-block float-right">
-                                 <li class="d-inline-block"><a href="javascript:void(0)"><i class="far fa-thumbs-up"></i> <span class="iq-fw-8 iq-font-14">90</span></a></li>
-                                 <li class="d-inline-block"><a href="javascript:void(0)"><i class="far fa-comment-alt"></i> <span class="iq-fw-8 iq-font-14">120</span></a></li>
-                              </ul>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6 col-sm-12">
-                     <div class="main-blog riq-mt-40">
-                        <div class="blog-img">
-                           <img src="images/blog/04.jpg" class="img-fluid" alt="image">
-                        </div>
-                        <div class="blog-detail">
-                           <a class="main-color iq-fw-8" href="blog-details-left-sidebar.html">Design Concept</a>
-                           <a href="blog-details-left-sidebar.html">
-                              <h5 class="mt-1 iq-fw-8">Alinean sollicitudin.</h5>
-                           </a>
-                           <p class="mb-0">Progravida nibh vel velit auctor alinean sollicitudin.</p>
-                           <div class="blog-info">
-                              <a href="#"><img src="images/blog/clients/03.jpg" class="img-fluid rounded-circle mr-3 user-img" alt="image"><span class="iq-fw-8 font-c iq-font-18">Glen Jax</span></a>
-                              <ul class="d-inline-block float-right">
-                                 <li class="d-inline-block"><a href="javascript:void(0)"><i class="far fa-thumbs-up"></i> <span class="iq-fw-8 iq-font-14">90</span></a></li>
-                                 <li class="d-inline-block"><a href="javascript:void(0)"><i class="far fa-comment-alt"></i> <span class="iq-fw-8 iq-font-14">120</span></a></li>
-                              </ul>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="row mt-5">
-                  <div class="col-sm-12">
-                     <nav>
-                        <ul class="pagination justify-content-center">
-                           <li class="page-item">
-                              <span class="page-link"><i class="fas fa-arrow-left"></i></span>
-                           </li>
-                           <li class="page-item"><a class="page-link" href="javascript:void(0)">1</a></li>
-                           <li class="page-item active" aria-current="page">
-                              <span class="page-link">
-                                 2
-                                 <span class="sr-only">(current)</span>
-                              </span>
-                           </li>
-                           <li class="page-item"><a class="page-link" href="javascript:void(0)">3</a></li>
-                           <li class="page-item"><a class="page-link" href="javascript:void(0)">4</a></li>
-                           <li class="page-item">
-                              <a class="page-link" href="#"><i class="fas fa-arrow-right"></i></a>
-                           </li>
-                        </ul>
-                     </nav>
-                  </div>
-               </div>
-            </div>
-         </section>
-      </div>
-      <!-- Blogs END -->
-       <footer class="footer-one footer-bg  position-relative">
-      <img src="images/footer/4.png" class="img-fluid fshap-after" alt="image">
-      <div class="iq-subscribe pattern-left  container position-relative" id="iq-subscribe">
-        <div class="pattern-right">
-          <div class="row align-items-center">
-            <div class="col-lg-6 col-md-12">
-              <div class="title-box text-left ">
-                <h2 class="title mb-3 text-white">Let's Discuss</h2>
-                <p class="text-white iq-fw-4 mb-0">Progravida nibh vel velit auctor alinean sollicitudin, lorem quis bibendum auctor.</p>
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-12">
-            <form class="position-relative subscribe-form mt-5 mt-lg-0">
-                <div class="form-group mb-0">
-                  <input type="email" class="form-control position-relative subscription-email  mb-0" placeholder="Enter Email">
-                </div>
-               <a class="slide-button button bt-subscribe subscription-button " href="javascript:void(0)">
-                         <div class="first">Subscribe</div>
-                         <div class="second">Subscribe</div>
-                       </a>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="contactinfo">
-        <div class="container p-0">
-          <div class="row ">
-            <div class="col-lg-4 col-md-6">
-              <div class="iq-footer-logo">
-                <a href="index.html"><img src="images/footer/logo.png" class="img-fluid" alt="image"></a>
-              </div>
-              <div class="footer-copyright mb-4 iq-fw-5 mt-3">©Copyrights 2019 Markethon</div>
-              <div>
-              <div class="lang float-left">
-                <i class="fas fa-globe"></i>
-                <select name="languagelist"  class="iq-language iq-fw-4">
-                  <option value="volvo">English</option>
-                  <option value="saab">French</option>
-                  <option value="opel">Persian</option>
-                  <option value="audi">Arabic</option>
-                </select>
-              </div>
+   </div>
 
-              <div class="social-media d-inline-block float-left ml-4">
-                <ul class="social">
-                  <li><a href="javascript:void(0)"><i class="fab fa-facebook-f iq-fw-6"></i></a></li>
-                  <li><a href="javascript:void(0)"><i class="fab fa-twitter iq-fw-6"></i></a></li>
-                  <li><a href="javascript:void(0)"><i class="fab fa-linkedin iq-fw-6"></i></a></li>
-                </ul>
-              </div>
-            </div>
-
-              <div class="contact mt-4 d-inline-block">
-                <a href="tel:0123456789"> <i class="fa fa-phone"></i><span class="iq-fw-5"> 0 123 456 789</span></a>
-                <div class="email d-inline-block"><a href="Mail:mail@markethon.com"> mail@markethon.com</a></div>
-              </div>
-            </div>
-           <div class="col-lg-2 col-md-6 footer-link">
-              <h5 class="iq-fw-7 riq-mt-40">About Us</h5>
-              <ul class="list-inline rmb-40">
-                <li class="list-item"><a href="index.html">Home</a></li>
-                <li class="list-item"><a href="about-us.html">About us</a></li>
-                <li class="list-item"><a href="faq.html">FAQ</a></li>
-                <li class="list-item"><a href="service.html">Services</a></li>
-                <li class="list-item"><a href="all-blog-grid.html">Blog</a></li>
-                <li class="list-item"><a href="contact-us.html">Contact Us</a></li>
-              </ul>
-            </div>
-            <div class="col-lg-2 col-md-6 footer-link">
-              <h5 class="iq-fw-7 ">Information</h5>
-              <ul class="list-inline">
-                <li class="list-item"><a href="pricing.html">Pricing</a></li>
-                <li class="list-item"><a href="client.html">Our Clients</a></li>
-                <li class="list-item"><a href="portfolio.html">Portfolio</a></li>
-                <li class="list-item"><a href="privacy-policy.html">Privacy Policy</a></li>
-                <li class="list-item"><a href="team.html">The Team</a></li>
-                <li class="list-item"><a href="service.html">Our Benefits</a></li>
-              </ul>
-            </div>
-            <div class="col-lg-4 col-md-6">
-              <div class="testimonials">
-                <div id="iqtestimonials" class="owl-carousel riq-mt-40" data-autoplay="true" data-loop="true" data-nav="false" data-dots="false" data-items="1" data-items-laptop="1" data-items-tab="1" data-items-mobile="1" data-items-mobile-sm="1" data-margin="15">
-                  <div class="item">
-                    <div class="desc">
-                      <p class="mb-0">Progravida <span class="text-black iq-fw-7">#nibh vel velit auctor</span> alinean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum,Lorem Ipsum. <a href="javascript:void(0)#" class="text-black iq-fw-7">https://iqonicthemes.com</a></p>
-                    </div>
-                    <div class="author">
-                      <div class="float-left d-flex mr-3">
-                        <i class="fab fa-twitter text-white"></i>
-                      </div>
-                      <div class=" float-left ">
-                        <div class="overview">
-                          <a>
-                            <h6 class="name text-black mb-0">iqonicthemes</h6>
-                          </a>
-                          <div class="details">2 Months Ago</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="item">
-                    <div class="desc">
-                      <p class="mb-0">Progravida <span class="text-black iq-fw-7">#nibh vel velit auctor</span> alinean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum,Lorem Ipsum. <a href="javascript:void(0)" class="text-black iq-fw-7">https://iqonicthemes.com</a></p>
-                    </div>
-                    <div class="author">
-                      <div class="float-left d-flex mr-3">
-                        <i class="fab fa-twitter text-white"></i>
-                      </div>
-                      <div class=" float-left ">
-                        <div class="overview">
-                          <h6 class="name text-black mb-0">iqonicthemes</h6>
-                          <div class="details">2 Months Ago</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="item">
-                    <div class="desc">
-                      <p class="mb-0">Progravida <span class="text-black iq-fw-7">#nibh vel velit auctor</span> alinean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum,Lorem Ipsum. <a href="javascript:void(0)" class="text-black iq-fw-7">https://iqonicthemes.com</a></p>
-                    </div>
-                    <div class="author">
-                      <div class="float-left d-flex mr-3">
-                        <i class="fab fa-twitter text-white"></i>
-                      </div>
-                      <div class=" float-left ">
-                        <div class="overview">
-                          <h6 class="name text-black mb-0">iqonicthemes</h6>
-                          <div class="details">2 Months Ago</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- back-to-top -->
-      <div id="back-to-top">
-        <a class="top" id="top" href="#top"><i class="ion-ios-arrow-thin-up"></i></a>
-      </div>
-      <!-- back-to-top End -->
-    </footer>
-     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-      <script src="js/jquery-min.js" ></script>
-      <!-- popper  -->
-      <script src="js/popper.min.js"></script>
-      <!--  bootstrap -->
-      <script src="js/bootstrap.min.js" ></script>
-      <!-- Modernizr JavaScript -->
-      <script src="js/modernizr.js"></script>
-      <!-- Appear JavaScript -->
-      <script src="js/appear.min.js"></script>
-      <!-- Megamenu  -->
-      <script src="js/mega_menu.min.js"></script>
-      <!-- Timeline JavaScript -->
-      <script src="js/timeline.js"></script>
-      <!-- Wow -->
-      <script src="js/wow.min.js"></script>
-      <!-- scrollme -->
-      <script src="js/jquery.scrollme.min.js"></script>
-      <!-- countdown JavaScript -->
-      <script src="js/countdown.js"></script>
-      <!-- waypoints JavaScript -->
-      <script src="js/waypoints.min.js"></script>
-      <!-- Counterup JavaScript -->
-      <script src="js/jquery.counterup.min.js"></script>
-      <!-- Owl Carousel JavaScript -->
-      <script src="js/owl.carousel.min.js"></script>
-      <!-- Magnific Popup JavaScript -->
-      <script src="js/jquery.magnific-popup.min.js"></script>
-      <!-- Isotope JavaScript -->
-      <script src="js/isotope.pkgd.min.js"></script>
-      <!-- Progressbar JavaScript -->
-      <script src="js/circle-progress.min.js"></script>
-      <!-- Canvas JavaScript -->
-      <script src="js/canvasjs.min.js"></script>
-      <!-- Retina JavaScript -->
-      <script src="js/retina.min.js"></script>
-      <!-- Custom JavaScript -->
-      <script src="js/custom.js"></script>
-   </body>
-
-<!-- Mirrored from templates.iqonic.design/markethon/layout-1/all-blog-grid.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 27 Aug 2021 19:56:49 GMT -->
-</html>
+{% endblock content %}
