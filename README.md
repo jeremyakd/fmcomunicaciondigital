@@ -1,23 +1,12 @@
-# fmcomunicaciondigital
+# FM Comunicacion Digital
 
 ABM Proyect Django refactor code 
 
-## Steps to up
-<hr>
+## Run
 
-* ### create a virtualenv/conda
-
-        python3 -m virtualenv env
-
-* ### Activate virtualenv
-
-        source env/bin/activate
-
-* ###  Install dependences
-
-
-      pip install -r requirements.txt
-
-* ### Run
-
-      python3 manage.py runserver
+```bash
+python3 -m venv venv              # Create a enviroment
+source venv/bin/activate          # Activate enviroment
+pip install -r requirements.txt   # Install dependences
+python manage.py runserver        # Run
+```
